@@ -12,7 +12,6 @@ panorama = new PANOLENS.ImagePanorama("./equirectangular.jpg");
 
 infospot = new PANOLENS.Infospot(350, PANOLENS.DataImage.Info);
 infospot.position.set(0, -2000, -5000);
-infospot.position.set(0, 2000, 5000);
 
 infospot.addEventListener("click", function () {
 	pointsEarned = pointsEarned + 10;
