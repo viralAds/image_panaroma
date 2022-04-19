@@ -1,20 +1,92 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Image Panorama</title>
-  <link rel="stylesheet" href="./style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Image Panorama</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-</head>
-<body>
+  <style>
+    .circle-c {
+      background: red;
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      z-index: 5555;
+    }
+    .circle-i {
+      background: red;
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      position: absolute;
+      top: 50px;
+      left: 150px;
+      z-index: 5555;
+    }
 
-<div id="container"></div>
-  <p id="points" class="points">Points :<span id="pointsEarned">00</span></p>
-  <canvas id="confeti" width="300" height="300" class="active"></canvas>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script  src="./script2.js"></script>
-  <script src='https://pchen66.github.io/js/three/three.min.js'></script>
-  <script src='https://rawgit.com/pchen66/panolens.js/dev/build/panolens.min.js'></script>
-  <script  src="./script.js"></script>
-</body>
+    .circle-r {
+      background: red;
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      position: absolute;
+      top: 150px;
+      left: 400px;
+      z-index: 5555;
+    }
+
+    .circle-cc {
+      background: red;
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      position: absolute;
+      top: 250px;
+      left: 70px;
+      z-index: 5555;
+    }
+
+    .circle-l {
+      background: red;
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      position: absolute;
+      top: 550px;
+      left: 200px;
+      z-index: 5555;
+    }
+
+    .circle-e {
+      background: red;
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      position: absolute;
+      top: 450px;
+      left: 10px;
+      z-index: 5555;
+    }
+  </style>
+  <body>
+    <div id="container"></div>
+    <p id="points" class="points">Points :<span id="pointsEarned">00</span></p>
+
+    <div class="circle-c" id="c" onclick="show1()"></div>
+    <div class="circle-i" id="i" hidden onclick="show2()"></div>
+    <div class="circle-r" id="r" hidden onclick="show3()"></div>
+    <div class="circle-cc" id="cc" hidden onclick="show4()"></div>
+    <div class="circle-l" id="l" hidden onclick="show5()"></div>
+    <div class="circle-e" id="e" hidden onclick="show6()"></div>
+    <canvas id="confeti" width="300" height="300" class="active"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./script2.js"></script>
+    <script src="https://pchen66.github.io/js/three/three.min.js"></script>
+    <script src="https://rawgit.com/pchen66/panolens.js/dev/build/panolens.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
